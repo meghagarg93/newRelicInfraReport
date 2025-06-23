@@ -17,19 +17,24 @@ const TEMPLATE_PATH = path.join(__dirname, 'reportTemplate.txt');
 
 const args = process.argv.slice(2);
 
-// let env = 'prod1'; // default
-args.forEach(arg => {
+// let ENV = 'prod1'; // default
+let DATE_ARG;
+
+process.argv.forEach(arg => {
   if (arg.startsWith('--env=')) {
     ENV = arg.split('=')[1];
+  } else if (arg.startsWith('--date=')) {
+    DATE_ARG = arg.split('=')[1];
   }
 });
+
 
 const CLUSTER_NAME = `dls-cup-${ENV}-apps`;
 console.log(`📦 Using cluster: ${CLUSTER_NAME}`);
 
-const reportDate = process.argv[2]
-  ? moment(process.argv[2], "YYYY-MM-DD")
-  : moment(); // Use the provided date or default to today
+
+const reportDate = DATE_ARG ? moment(DATE_ARG, "YYYY-MM-DD") : moment();
+
 const today = reportDate.format("YYYY-MM-DD 10:00:00+0530");
 const yesterday = reportDate.clone().subtract(1, "day").format("YYYY-MM-DD 10:00:00+0530");
 const daybfryesterday = reportDate.clone().subtract(2, "day").format("YYYY-MM-DD 10:00:00+0530");
