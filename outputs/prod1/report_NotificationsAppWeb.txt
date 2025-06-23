@@ -1,0 +1,20 @@
+NotificationsAppWeb Daily Resource Utilization Report
+
+Duration: 2025-06-19 10:00:00+0530 to 2025-06-20 10:00:00+0530
+Cluster Name: dls-cup-prod1-apps
+Environment: prod1
+
+
+1. Overview
+Max Running Tasks - 3
+Avg CPU Utilization - 25.56 %
+Avg Memory Utilization - 5.98 %
+Max CPU Task - 48.44%
+Max Memory Task - 6.86 %
+
+2. CPU Utilization 
+<bc-attachment sgid="BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9BdHRhY2htZW50LzczMzQ5NDY4NT9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--40508d69bb3bfaa418ae55fc0d637ef05eb815eb" caption="CPU chart"></bc-attachment>
+
+3. Memory Utilization 
+Attached is the graph
+<bc-attachment sgid="BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9BdHRhY2htZW50LzczMzQ5NDY5Mz9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--cbc990e391194e47854556c3e86f764f81587406" caption="Memory chart"></bc-attachment>

@@ -1,0 +1,19 @@
+<<SERVICE_NAME>> Daily Resource Utilization Report
+
+Duration: <<DATE>>
+Cluster Name: <<ECS_CLUSTER_NAME>>
+Environment: <<ENV>>
+
+
+1. Overview
+Max Running Tasks - <<TOTAL_TASKS>>
+Avg CPU Utilization - <<AVG_CPU_UTILIZATION>> %
+Avg Memory Utilization - <<AVG_MEMORY_UTILIZATION>> %
+Max CPU Utilization - <<MAX_CPU_USAGE>>%
+Max Memory Utilization - <<MAX_MEMORY_USAGE>> %
+
+2. CPU Utilization 
+<bc-attachment sgid="<<cpu_chart_link>>" caption="CPU chart"></bc-attachment>
+
+3. Memory Utilization 
+<bc-attachment sgid="<<memory_chart_link>>" caption="Memory chart"></bc-attachment>

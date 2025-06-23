@@ -1,0 +1,230 @@
+NotificationsAppWeb Daily Resource Utilization Report
+
+Duration: 2025-06-19 10:00:00+0530 to 2025-06-20 10:00:00+0530
+Cluster Name: dls-cup-prod1-apps
+Environment: prod1
+
+
+1. Overview
+Max Running Tasks - 3
+Avg CPU Utilization - 25.56 %
+Avg Memory Utilization - 5.98 %
+Max CPU Task - 48.44%
+Max Memory Task - 6.86 %
+
+2. CPU Utilization 
+Attached is the graph
+
+3. Memory Utilization 
+Attached is the graph
+
+
+------------------------
+
+SupportAdminAppWeb Daily Resource Utilization Report
+
+Duration: 2025-06-19 10:00:00+0530 to 2025-06-20 10:00:00+0530
+Cluster Name: dls-cup-prod1-apps
+Environment: prod1
+
+
+1. Overview
+Max Running Tasks - 2
+Avg CPU Utilization - 0.66 %
+Avg Memory Utilization - 13.36 %
+Max CPU Task - 32.99%
+Max Memory Task - 21.39 %
+
+2. CPU Utilization 
+Attached is the graph
+
+3. Memory Utilization 
+Attached is the graph
+
+
+------------------------
+
+DashboardWeb Daily Resource Utilization Report
+
+Duration: 2025-06-19 10:00:00+0530 to 2025-06-20 10:00:00+0530
+Cluster Name: dls-cup-prod1-apps
+Environment: prod1
+
+
+1. Overview
+Max Running Tasks - 5
+Avg CPU Utilization - 21.37 %
+Avg Memory Utilization - 19.87 %
+Max CPU Task - 79.29%
+Max Memory Task - 30.47 %
+
+2. CPU Utilization 
+Attached is the graph
+
+3. Memory Utilization 
+Attached is the graph
+
+
+------------------------
+
+AdminAppWeb Daily Resource Utilization Report
+
+Duration: 2025-06-19 10:00:00+0530 to 2025-06-20 10:00:00+0530
+Cluster Name: dls-cup-prod1-apps
+Environment: prod1
+
+
+1. Overview
+Max Running Tasks - 2
+Avg CPU Utilization - 14.63 %
+Avg Memory Utilization - 18.80 %
+Max CPU Task - 59.55%
+Max Memory Task - 24.85 %
+
+2. CPU Utilization 
+Attached is the graph
+
+3. Memory Utilization 
+Attached is the graph
+
+
+------------------------
+
+FocAppWeb Daily Resource Utilization Report
+
+Duration: 2025-06-19 10:00:00+0530 to 2025-06-20 10:00:00+0530
+Cluster Name: dls-cup-prod1-apps
+Environment: prod1
+
+
+1. Overview
+Max Running Tasks - 2
+Avg CPU Utilization - 13.58 %
+Avg Memory Utilization - 11.92 %
+Max CPU Task - 61.38%
+Max Memory Task - 17.41 %
+
+2. CPU Utilization 
+Attached is the graph
+
+3. Memory Utilization 
+Attached is the graph
+
+
+------------------------
+
+NlpAppWeb Daily Resource Utilization Report
+
+Duration: 2025-06-19 10:00:00+0530 to 2025-06-20 10:00:00+0530
+Cluster Name: dls-cup-prod1-apps
+Environment: prod1
+
+
+1. Overview
+Max Running Tasks - 2
+Avg CPU Utilization - 31.30 %
+Avg Memory Utilization - 10.32 %
+Max CPU Task - 54.99%
+Max Memory Task - 11.08 %
+
+2. CPU Utilization 
+Attached is the graph
+
+3. Memory Utilization 
+Attached is the graph
+
+
+------------------------
+
+ClassAppWeb Daily Resource Utilization Report
+
+Duration: 2025-06-19 10:00:00+0530 to 2025-06-20 10:00:00+0530
+Cluster Name: dls-cup-prod1-apps
+Environment: prod1
+
+
+1. Overview
+Max Running Tasks - 2
+Avg CPU Utilization - 5.66 %
+Avg Memory Utilization - 6.16 %
+Max CPU Task - 14.32%
+Max Memory Task - 7.46 %
+
+2. CPU Utilization 
+Attached is the graph
+
+3. Memory Utilization 
+Attached is the graph
+
+
+------------------------
+
+LearningpathWeb Daily Resource Utilization Report
+
+Duration: 2025-06-19 10:00:00+0530 to 2025-06-20 10:00:00+0530
+Cluster Name: dls-cup-prod1-apps
+Environment: prod1
+
+
+1. Overview
+Max Running Tasks - 2
+Avg CPU Utilization - 23.40 %
+Avg Memory Utilization - 9.98 %
+Max CPU Task - 42.60%
+Max Memory Task - 10.42 %
+
+2. CPU Utilization 
+Attached is the graph
+
+3. Memory Utilization 
+Attached is the graph
+
+
+------------------------
+
+MobileGatewayAppWeb Daily Resource Utilization Report
+
+Duration: 2025-06-19 10:00:00+0530 to 2025-06-20 10:00:00+0530
+Cluster Name: dls-cup-prod1-apps
+Environment: prod1
+
+
+1. Overview
+Max Running Tasks - 2
+Avg CPU Utilization - 13.96 %
+Avg Memory Utilization - 12.18 %
+Max CPU Task - 93.09%
+Max Memory Task - 19.43 %
+
+2. CPU Utilization 
+Attached is the graph
+
+3. Memory Utilization 
+Attached is the graph
+
+
+------------------------
+
+OnboardingWeb Daily Resource Utilization Report
+
+Duration: 2025-06-19 10:00:00+0530 to 2025-06-20 10:00:00+0530
+Cluster Name: dls-cup-prod1-apps
+Environment: prod1
+
+
+1. Overview
+Max Running Tasks - 3
+Avg CPU Utilization - 15.75 %
+Avg Memory Utilization - 15.62 %
+Max CPU Task - 26.41%
+Max Memory Task - 19.68 %
+
+2. CPU Utilization 
+Attached is the graph
+
+3. Memory Utilization 
+Attached is the graph
+
+
+------------------------
+
