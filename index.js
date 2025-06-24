@@ -19,7 +19,7 @@ const args = process.argv.slice(2);
 
 // let ENV = 'prod1'; // default
 let DATE_ARG;
-let SPECIFIC_SERVICE;
+let SPECIFIC_SERVICES = [];
 
 process.argv.forEach(arg => {
   if (arg.startsWith('--env=')) {
@@ -27,7 +27,7 @@ process.argv.forEach(arg => {
   } else if (arg.startsWith('--date=')) {
     DATE_ARG = arg.split('=')[1];
   } else if (arg.startsWith('--service=')) {
-    SPECIFIC_SERVICE = arg.split('=')[1];
+    SPECIFIC_SERVICES = arg.split('=')[1].split(',').map(s => s.trim());
   }
 });
 
@@ -137,10 +137,11 @@ async function main() {
   clearOutputDir(ENV);
   try {
     // const services = await getServiceNames();
-    let services = SPECIFIC_SERVICE ? [SPECIFIC_SERVICE] : await getServiceNames();
+    // let services = SPECIFIC_SERVICE ? [SPECIFIC_SERVICE] : await getServiceNames();
+    let services = SPECIFIC_SERVICES.length > 0 ? SPECIFIC_SERVICES : await getServiceNames();
     console.log(`Services selected (${services.length}): ${services.join(', ')}`);
 
-    const excludedApps = ['NotificationsAppWeb', 'SupportAdminAppWeb', 'DashboardWeb', 'MobileGatewayAppWeb', 'NlpAppWeb', 'OnboardingWeb', 'FocAppWeb', 'LearningpathWeb', 'ClassAppWeb', 'IeltsAppWeb'];
+    const excludedApps = ['NotificationsAppWeb', 'SupportAdminAppWeb', 'DashboardWeb', 'MobileGatewayAppWeb', 'NlpAppWeb', 'FocAppWeb', 'LearningpathWeb', 'ClassAppWeb', 'IeltsAppWeb'];
 
     for (const service of services) {
 
@@ -149,7 +150,7 @@ async function main() {
       //   continue;
       // }
 
-      if (excludedApps.includes(service) && service !== SPECIFIC_SERVICE) {
+      if (excludedApps.includes(service) && !SPECIFIC_SERVICES.includes(service)) {
         console.log(`⛔ Skipping excluded app: ${service}`);
         continue;
       }

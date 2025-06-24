@@ -13,7 +13,7 @@ Max CPU Utilization - 90.28%
 Max Memory Utilization - 19.73 %
 
 2. CPU Utilization 
-<bc-attachment sgid="BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9BdHRhY2htZW50LzczNDQ0NTM1OD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--353e2b3dc832140b397096d726e4651a3ef5ca63" caption="CPU chart"></bc-attachment>
+<bc-attachment sgid="<<cpu_chart_link>>" caption="CPU chart"></bc-attachment>
 
 3. Memory Utilization 
-<bc-attachment sgid="BAh7BkkiC19yYWlscwY6BkVUewdJIglkYXRhBjsAVEkiLmdpZDovL2JjMy9BdHRhY2htZW50LzczNDQ0NTM2MD9leHBpcmVzX2luBjsAVEkiCHB1cgY7AFRJIg9hdHRhY2hhYmxlBjsAVA==--7be668aa0663383e9099a6fe9b51d9ccd79293cb" caption="Memory chart"></bc-attachment>
+<bc-attachment sgid="<<memory_chart_link>>" caption="Memory chart"></bc-attachment>
