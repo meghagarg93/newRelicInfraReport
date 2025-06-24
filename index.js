@@ -19,12 +19,15 @@ const args = process.argv.slice(2);
 
 // let ENV = 'prod1'; // default
 let DATE_ARG;
+let SPECIFIC_SERVICE;
 
 process.argv.forEach(arg => {
   if (arg.startsWith('--env=')) {
     ENV = arg.split('=')[1];
   } else if (arg.startsWith('--date=')) {
     DATE_ARG = arg.split('=')[1];
+  } else if (arg.startsWith('--service=')) {
+    SPECIFIC_SERVICE = arg.split('=')[1];
   }
 });
 
@@ -133,17 +136,24 @@ function clearOutputDir(env) {
 async function main() {
   clearOutputDir(ENV);
   try {
-    const services = await getServiceNames();
+    // const services = await getServiceNames();
+    let services = SPECIFIC_SERVICE ? [SPECIFIC_SERVICE] : await getServiceNames();
     console.log(`Services selected (${services.length}): ${services.join(', ')}`);
 
-    const excludedApps = ['NotificationsAppWeb', 'SupportAdminAppWeb', 'DashboardWeb','MobileGatewayAppWeb','NlpAppWeb','OnboardingWeb','FocAppWeb','LearningpathWeb','ClassAppWeb','IeltsAppWeb'];
+    const excludedApps = ['NotificationsAppWeb', 'SupportAdminAppWeb', 'DashboardWeb', 'MobileGatewayAppWeb', 'NlpAppWeb', 'OnboardingWeb', 'FocAppWeb', 'LearningpathWeb', 'ClassAppWeb', 'IeltsAppWeb'];
 
     for (const service of services) {
 
-      if (excludedApps.includes(service)) {
+      // if (excludedApps.includes(service)) {
+      //   console.log(`⛔ Skipping excluded app: ${service}`);
+      //   continue;
+      // }
+
+      if (excludedApps.includes(service) && service !== SPECIFIC_SERVICE) {
         console.log(`⛔ Skipping excluded app: ${service}`);
         continue;
       }
+
       console.log(`\n📊 Processing: ${service}`);
 
       const maxTasks = await getMaxRunningTasks(service);
