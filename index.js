@@ -141,7 +141,7 @@ async function main() {
     let services = SPECIFIC_SERVICES.length > 0 ? SPECIFIC_SERVICES : await getServiceNames();
     console.log(`Services selected (${services.length}): ${services.join(', ')}`);
 
-    const excludedApps = ['NotificationsAppWeb', 'SupportAdminAppWeb', 'DashboardWeb', 'MobileGatewayAppWeb', 'NlpAppWeb', 'FocAppWeb', 'LearningpathWeb', 'ClassAppWeb', 'IeltsAppWeb'];
+    const excludedApps = ['NotificationsAppWeb', 'SupportAdminAppWeb', 'MobileGatewayAppWeb', 'NlpAppWeb', 'FocAppWeb', 'LearningpathWeb', 'ClassAppWeb', 'IeltsAppWeb'];
 
     for (const service of services) {
 
